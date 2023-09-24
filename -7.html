@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/51ba906825.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//www.med.upenn.edu/js/jquery.gsaEmbed.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+      body {
+        list-style: none;
+
+        height: 1000px;
+      }
+
+      .main-p {
+        background-image: url(/pt/snow-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll;
+        z-index: -1;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 60px;
+
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgb(0, 0, 0);
+      }
+      header .logo {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+
+        font-size: 180%;
+        font-family: Archivo Narrow;
+        font-weight: bold;
+        letter-spacing: -1.5px;
+        color: rgb(53, 70, 78);
+      }
+      .logo img {
+        align-items: center;
+        display: flex;
+      }
+      header .bar {
+        display: flex;
+        align-items: center;
+        gap: 15%;
+
+        font-size: 75%;
+        font-family: Julius Sans One;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      a {
+        color: rgb(53, 70, 78);
+        cursor: pointer;
+      }
+      .photography {
+        transition: all 0.5s ease-in-out;
+      }
+      .photography:hover {
+        transform: scale(1.2);
+      }
+      .contacts button {
+        background-color: rgb(53, 70, 78);
+        border: none;
+        padding: 24px 18px;
+
+        color: rgb(200, 221, 224);
+        font-size: 90%;
+        font-family: Julius Sans One;
+        font-weight: 800;
+        letter-spacing: 2px;
+
+        cursor: pointer;
+      }
+      .main-p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: grid;
+        place-content: center;
+
+        line-height: 350%;
+
+        color: rgb(38, 46, 52);
+      }
+      .p-1 {
+        font-size: 80px;
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .p-2 {
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-family: Bebas Neue;
+        font-style: italic;
+      }
+      .yt,
+      .ig {
+        border: 1px solid rgb(38, 46, 52);
+        border-radius: 2px;
+        background-color: transparent;
+
+        font-family: Julius Sans One;
+        font-weight: 800;
+        letter-spacing: 2px;
+        padding: 12px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+      }
+      .btns {
+        display: flex;
+        gap: 12px;
+        flex-direction: row;
+      }
+      .btns img {
+        width: 16px;
+      }
+      .yt:hover,
+      .ig:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="logo">
+          RBRT<span><img src="/pt/snow.png" alt="" /></span>FLYD
+        </div>
+        <div class="bar">
+          <li class="photography"><a href="#">photography</a></li>
+          <li class="contacts"><button>contacts</button></li>
+        </div>
+      </header>
+      <div class="main-p">
+        <h1 class="p-1">solving big problems</h1>
+        <p class="p-2">failing a lot along the way.</p>
+        <div class="btns">
+          <button class="yt">
+            <img src="/pt/instagram.png" alt="" />
+            youtube
+          </button>
+          <button class="ig">
+            <img src="/pt/youtube-1.png" alt="" />
+            instagram
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="gsa_search"></div>
+  </body>
+  <script>
+    jQuery(document).ready(function ($) {
+      $("#gsa_search").gsaEmbed();
+    });
+  </script>
+</html>
